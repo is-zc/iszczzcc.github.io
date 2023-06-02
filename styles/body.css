@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    top: 505px;
+    /* 弹性布局 */
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 四川历史 */
+.main>h1 {
+    /* position: relative; */
+    height: 100px;
+    font-size: 2.5em;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 华文楷体;
+}
+
+.main .main-s1 div p a {
+    text-decoration: none;
+}
+
+.main .main-s1 a:hover {
+    width: 10px;
+    height: 10px;
+    color: rgb(0, 255, 4);
+}
+
+.fanhui a {
+    /* 取消下划线 */
+    text-decoration: none;
+
+}
+
+/* 返回顶部背景 */
+.fanhui {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(119, 255, 0, 0.3);
+    /* 设置圆角 */
+    border-radius: 50%;
+    /* 手型 */
+    cursor: pointer;
+    position: fixed;
+    /* left: 94%; */
+    left: 100%;
+    top: 85%;
+    /* 定义为绝对位置 */
+    _position: absolute;
+    /* 把导航栏放在垂直滚动条的顶端 */
+    /* _top: expression(documentElement scrollTop+"px"); */
+    z-index: 99;
+    opacity: 0;
+    /* right: ; */
+}
+
+/* 返回顶部控件(内容) */
+.fanhui span {
+    /* margin-top: 200%; */
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bolder;
+    font-family: 华文仿宋;
+    position: relative;
+    top: 9px;
+    left: 15px;
+    /* top: 80%; */
+    /* transition: 0.5s; */
+}
+
+.fanhui a {
+    color: rgb(0, 0, 0);
+}
+
+.fanhui a:hover {
+    color: rgb(0, 101, 14);
+}
+
+/* 段落 */
+.main .main-s1 p {
+    /* 首行缩进 */
+    text-indent: 2em;
+    /* 行间距 */
+    line-height: 28px;
+    /* 上下p间距 */
+    margin: 25px 0;
+}
+
+/* 内容部分 */
+.main .main-s1 div {
+    width: 95%;
+    margin: 0 2%;
+    overflow: hidden;
+    /* font-size: 1.2em; */
+    /* 文字自适应 */
+    /* font-size: calc(100vw*24/1920); */
+    font-size: calc(1920);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 20px;
+
+}
+
+/* 历史跳转 */
+#skip {
+    position: absolute;
+    top: -60px;
+}
+
+.main .main-s1 .main-s1s1 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* 页尾样式 */
+footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #005eff;
+    line-height: 25px;
+    padding-top: 20px;
+    position: relative;
+    top: 510px;
+}

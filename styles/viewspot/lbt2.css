@@ -1,0 +1,160 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 100%窗口高度 */
+    height: 100%;
+    /* 弹性布局 水平+垂直居中 */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: none; */
+    background-color: #e9e7e7;
+}
+
+/* 轮播图主体 */
+.swipe-s2 {
+    /* 相对定位 */
+    position: relative;
+    width: 100%;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.jian-s2 {
+    width: 350px;
+}
+
+/* 模糊背景 */
+.swipe-s2 .bg-s2 {
+    /* 绝对定位 */
+    position: absolute;
+    width: 500%;
+    height: 100%;
+    z-index: 1;
+    /* background-image: url("../images/view spot/九寨沟旅游景区.jpg"); */
+    background-size: 3000px;
+    background-position: center center;
+    /* 模糊滤镜 */
+    filter: blur(140px);
+    /* transition: 0.3s; */
+}
+
+/* 图片区域 */
+.swipe-s2 section {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    /* 居中 */
+    margin: 0 auto;
+
+}
+
+/* 图片盒子 */
+.swipe-s2 .img-box-s2 {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* 图片 */
+.swipe-s2 .img-box-s2 .img-s2 {
+    width: 100%;
+    height: 100%;
+    /* 保持原有尺寸比例, 裁切长边 */
+    object-fit: cover;
+
+}
+
+/* 指示器 */
+.swipe-s2 .select-s2 {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    bottom: 30px;
+    text-align: center;
+}
+
+.swipe-s2 .select-s2 .item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    /* 阴影 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+/* 鼠标移入指示器 */
+.swipe-s2 .select-s2 .item:hover {
+    background-color: #ff4400;
+}
+
+/* 指示器选中状态 */
+.swipe-s2 .select-s2 .item.checked {
+    background-color: #ff4400;
+}
+
+/* 两侧翻页按钮 */
+.swipe-s2 .btn {
+    width: 40px;
+    height: 100px;
+    color: #fff;
+    /* 绝对定位 垂直居中 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.05);
+    /* 弹性布局 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    /* 鼠标移入光标变小手 */
+    cursor: pointer;
+    /* 动画过渡 */
+    transition: 0.5s;
+}
+
+.swipe-s2 .btn.left {
+    left: -60px;
+}
+
+.swipe-s2 .btn.right {
+    right: -60px;
+}
+
+.swipe-s2 .btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* 响应式 屏幕尺寸小于1000(1200)px时以下代码生效(让两个按钮移动到图片主体内部) */
+@media screen and (max-width:1000px) {
+    .swipe-s2 .btn.left {
+        left: 20px;
+    }
+
+    .swipe-s2 .btn.right {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .swipe-s2 .btn.left {
+        left: 20px;
+    }
+
+    .swipe-s2 .btn.right {
+        right: 20px;
+    }
+}

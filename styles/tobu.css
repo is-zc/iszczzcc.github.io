@@ -1,0 +1,143 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav a {
+    /* 取消下划线 */
+    text-decoration: none;
+    color: rgb(107, 35, 174);
+}
+
+.nav ul li a {
+    /* 加粗字体 */
+    font-weight: bold;
+}
+
+.nav {
+    /* 导航栏高度 */
+    height: 60px;
+    background-color: rgb(209, 209, 218);
+    /* 阴影 */
+    box-shadow: 10px 10px 10px -8px rgb(0, 0, 0, 3);
+    transition: 0.3s;
+    /*k*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    float: right;
+    /* 定义为绝对位置 */
+    _position: absolute;
+    /* 把导航栏放在垂直滚动条的顶端 */
+    _top: expression(documentElement scrollTop+"px");
+    z-index: 9999;
+}
+
+/* 导航栏 */
+.nav:hover {
+    box-shadow: 10px 10px 10px -4px rgb(0, 0, 0, 3);
+    transition: 0.3s;
+}
+
+/* 导航栏内容 */
+.nav ul li {
+    /* 取消圆点 */
+    list-style: none;
+    margin: 0 10px 0;
+    margin-top: 20px;
+    /* 清除右浮动 */
+    float: right;
+    text-align: right;
+    transition: 0.5s;
+}
+
+/* 鼠标悬停 */
+.nav .aa1:hover {
+    font-size: 1.6vh;
+    font-size: 2.05vh;
+    padding-bottom: 1px;
+    padding-right: 1px;
+    border-bottom: 5px solid #1d25ff;
+    transition: 0.2s;
+
+}
+
+/* 点击时 */
+.nav a:active {
+    color: aqua;
+    border-bottom: 0px;
+}
+
+/* 字体(你好四川) */
+.zheng h1 {
+    width: 400px;
+    font-family: "华文行楷";
+    font-size: 6em;
+    color: cornflowerblue;
+    padding-top: 5%;
+    position: relative;
+    right: -38%;
+
+}
+
+/* 城市地标图 */
+.zheng .zheng-s {
+    height: 100px;
+    font-size: 2.5em;
+    margin-top: 45px;
+    text-align: center;
+    font-family: 华文楷体;
+    color: black;
+    margin-top: -3%;
+}
+
+/* 城市背景定位 */
+.nav .div-s {
+    margin-top: 5%;
+    display: none;
+    /* 相对定位 */
+    position: relative;
+    left: 37%;
+    top: 5%;
+}
+
+/* 城市内容 */
+.nav .div-s .div-s1 {
+    width: 400px;
+    height: 200px;
+    /* 背景圆角 */
+    border-radius: 25px;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px -8px rgb(0, 0, 0, 0.5);
+    padding-right: 8%;
+    /* text-align: left; */
+    /* padding: 0 50% 0 0; */
+    z-index: 999;
+    /* 磨砂效果 */
+    backdrop-filter: blur(2px);
+}
+
+.nav ul li:hover .div-s {
+    display: block;
+
+}
+
+.nav ul li .div-s .div-s1 a:hover {
+    padding-bottom: 1px;
+    padding-right: 1px;
+    border-bottom: 5px solid #1d25ff;
+    transition: 0.3s;
+}
+
+/* 隐藏内容字体颜色 */
+.nav ul li .div-s a:link,
+.div-s1 a:visited {
+    color: rgb(40, 4, 41);
+}
+
+.nav .div-s .div-s1 .div-s1s1 {
+    position: relative;
+    right: 128px;
+}

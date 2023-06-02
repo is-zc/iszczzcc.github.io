@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #e9e7e7;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* 图片设置 */
+img {
+    width: 500px;
+    height: 300px;
+    /* 设置图片圆角 */
+    border-radius: 50px;
+}
+
+.box-f {
+    /* 弹性布局 */
+    display: flex;
+    /* 平均分布( 左右有间隔 ) */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.box-f .box1 {
+    /* 弹性布局 */
+    display: flex;
+    /* 平均分布( 左右有间隔 ) */
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+.box-f .box1 .box-li {
+    width: 55%;
+    /* background-color: pink; */
+    display: inline-block;
+}
+
+.box-f .box1 .box-li p {
+    /* 首行缩进 */
+    text-indent: 2em;
+    margin-top: 5%;
+    /* background-color: pink; */
+    font-size: 2em;
+    /* 行间距 */
+    line-height: 50px;
+    /*字间距 */
+    letter-spacing: 2px;
+}
+
+.box-f .box1 .box-img {
+    vertical-align: middle;
+    margin-top: 8%;
+
+}
+
+.box-f .box1 .box-img p {
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.5em;
+    /*字间距 */
+    letter-spacing: 2px;
+}
+
+/* 2 */
+.box-f .box2 {
+    margin-top: 5%;
+    /* 弹性布局 */
+    display: flex;
+    /* 平均分布( 左右有间隔 ) */
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.box-f .box2 .box-li2 {
+    width: 55%;
+    /* background-color: pink; */
+    display: inline-block;
+}
+
+.box-f .box2 .box-li2 p {
+    /* 首行缩进 */
+    text-indent: 2em;
+    margin-top: 5%;
+    /* background-color: pink; */
+    font-size: 2em;
+    /* 行间距 */
+    line-height: 50px;
+    /*字间距 */
+    letter-spacing: 2px;
+}
+
+.box-f .box2 .box-img2 {
+    vertical-align: middle;
+    margin-top: 8%;
+
+}
+
+.box-f .box2 .box-img2 p {
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.5em;
+    /*字间距 */
+    letter-spacing: 2px;
+}
+
+/* 3 */
+.box-f .box3 {
+    margin-top: 5%;
+    /* 弹性布局 */
+    display: flex;
+    /* 平均分布( 左右有间隔 ) */
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.box-f .box3 .box-li3 {
+    width: 55%;
+    /* background-color: pink; */
+    display: inline-block;
+}
+
+.box-f .box3 .box-li3 p {
+    /* 首行缩进 */
+    text-indent: 2em;
+    margin-top: 5%;
+    /* background-color: pink; */
+    font-size: 2em;
+    /* 行间距 */
+    line-height: 50px;
+    /*字间距 */
+    letter-spacing: 2px;
+}
+
+.box-f .box3 .box-img3 {
+    vertical-align: middle;
+    margin-top: 8%;
+
+}
+
+.box-f .box3 .box-img3 p {
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.5em;
+    /*字间距 */
+    letter-spacing: 2px;
+}

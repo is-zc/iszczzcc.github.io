@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(255, 255, 255);
+    /*             opacity: 0;
+    transition: opacity 0.3s; */
+}
+
+.ziti {
+    margin: 20% auto;
+    width: 600px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+.ziti p {
+    font-size: 5em;
+    text-align: center;
+    font-family: 华文楷体;
+    margin-top: 100px;
+    padding: 3% 0;
+
+
+}
+
+hr {
+    /* border: 2px solid #000; */
+    width: 80%;
+    margin: 0 auto;
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+video {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+source {
+    min-height: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+/* 页尾样式 */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #005eff;
+    line-height: 25px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0px;
+}

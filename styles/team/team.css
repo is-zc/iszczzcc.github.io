@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-box {
+    width: 400px;
+    height: 400px;
+    margin: 11% auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* 磨砂效果 */
+    backdrop-filter: blur(50px);
+    /* background-image: linear-gradient(to right top, #ffffff, #6cdbeb); */
+    /* 圆角 */
+    border-radius: 10%;
+    /* 阴影 */
+    /* box-shadow: 10px 10px 10px -8px rgb(0, 0, 0, 3); */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 3);
+}
+
+.box-box .box-b1 {
+    padding: 30% 0;
+    /* 加粗字体 */
+    font-weight: bolder;
+    text-align: center;
+    font-family: "华文楷体";
+    font-size: 1.5em;
+}
+
+/* 渐变 */
+.box-Gc {
+    /* background: linear-gradient(-45deg, rgb(107, 175, 240), rgb(245, 137, 227)); */
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 600% 600%;
+    /* 循环渐变 */
+    animation: moiveAnimation 5s ease infinite;
+    overflow: hidden;
+    /* animation: moiveAnimation 2s; */
+}
+
+/* 渐变动画 */
+@keyframes moiveAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 页脚样式 */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #005eff;
+    line-height: 25px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0px;
+}
